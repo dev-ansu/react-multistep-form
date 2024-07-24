@@ -1,0 +1,42 @@
+.container-fluid{
+    /* height: 100vh; */
+    overflow:hidden;
+    /* min-height: 100vh !important; */
+    background-color: #fff;
+    /* background-color: #010449; */
+}
+.container{
+    padding:24px;
+    height: 100% !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.steps{
+    max-height: 100%;
+    overflow-y: auto;
+
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    color:#000;
+}
+#logo-mais-talentos{
+    width: 250px;
+}
+@media (max-width:780px) {
+    #container-form-steps{
+        display: flex;
+        flex-direction: column;
+    }
+    #list-step{
+        display: flex;
+    }
+    #logo-mais-talentos{
+        width: 150px;
+    }
+}

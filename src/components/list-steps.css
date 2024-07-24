@@ -1,0 +1,52 @@
+#list-step{
+    min-height: 500px;
+    max-height: 500px;
+}
+.circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    border:1px solid #ccc;
+}
+
+.active{
+    background-color: #156c43;
+}
+
+.active i{
+    color:#fff;
+}
+
+@media (max-width:780px) {
+    #list-step{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    #list-step .circle{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+    #list-step .step-info h2{
+        font-size: 12px !important; 
+        text-align: center;        
+    }
+    #list-step .step-info {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
+        font-size: 8px !important;
+        text-align: center;
+    }
+    #list-step{
+        min-height: 100px;
+        max-height: 100px;
+    }
+}
